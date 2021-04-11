@@ -62,6 +62,10 @@ class Game {
 
             // Add code to diplay the scores of both 
             // the players on the screen
+            textSize(30);
+            fill("white");
+            text("Player1 score: "+allPlayers.player1.score, 50, 50);
+            text("Player2 score: "+allPlayers.player2.score, 50, 100);
 
 
 
@@ -116,7 +120,9 @@ class Game {
 
     end() {
         // Add code to update game state and display Game Over
-        console.log("Game End");
+        textSize(30);
+        fill("white");
+        text("Game Over", 500, 300);
 
 
     }

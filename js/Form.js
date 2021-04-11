@@ -46,7 +46,15 @@ class Form{
 
 
         // Make reset button reset the values in the database
-        
+        this.reset.mousePressed(() => {
+            game.update(0);
+            player.updateCount(0);
+            database.ref("/").update({
+                players: null
+            });
+     
+        });
+
         
         
     }
